@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libertas startup</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services/products">Services/Products</a>
+        <a href="#team">Team</a>
+        <a href="#connect">Connect</a>
+    </nav>
+    <section id="home" class="home">
+        <h1>Libertas</h1>
+        <p id="slogan"></p>
+    </section>
+    <section id="about" class="about">
+        <h1>About Us</h1>
+        <p>We are a startup that aims to make it easier for everyone to be a digital nomad.<br>We provide products and services that solves major problems that digital nomads face in their journey.<br>We believe that Freedom, location-independence, and divercifying experiences will be the core values of work and life in the future, so we just embraced those values because we believe in the future.</p>
+        <img src="../static/images/5.jpg" id="about.image">
+    </section>
+    <section id="services/products" class="services">
+        <h1>services & products</h1>
+        <div class="commodities">
+            <div class="commodity">
+                <div class="name"><h1>Odyssey</h1></div>
+                <div class="description"><p>An app that allows digital nomads to combine the flexibility of solo-travel and the socialization of group travel</p></div>
+                <div class="preview"><img src="../static/images/6.png"></div>
+                <div class="interested_btn" id="interested_btn_1"><button>Am Interested!</button></div>
+            </div>
+            <div class="commodity">
+                <div class="name"><h1>Nomad Space</h1></div>
+                <div class="description"><p>A co-working space catered towards, and exclusive to Digital Nomads</p></div>
+                <div class="preview"><img src="../static/images/7.jpg"></div>
+                <div class="interested_btn" id="interested_btn_2"><button>Am Interested!</button></div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <h1>Team</h1>
+        <div class="team_members">
+            <div class="team_member">
+                <img src="../static/images/8.JPEG">
+                <div class="member_info">
+                    <div class="name"><h1>Moe Hasan</h1></div>
+                    <div class="position"><p>Founder, CEO, and CTO.</p></div>
+                    <div class="description"><p>Am an interdisciplinary, self-taught software developer, content creator on Youtube, Founder, and most importantly, A science lover.</p></div>
+                </div>
+                <a href="https://www.linkedin.com/in/mohammed-al-saedi-659704245/">Visit LinkedIn profile</a>
+            </div>
+            <div class="team_member">
+                <img src="../static/images/9.JPG">
+                <div class="member_info">
+                    <div class="name"><h1>We're Hiring!</h1></div>
+                    <div class="position"><p>CMO</p></div>
+                    <div class="description"><p>We need a cofounder who is willing to occupy the position of CMO.<br>for more info, please reach out to us via the form in the "connect" section.</p></div>
+                </div>
+                <a href="">Visit LinkedIn profile</a>
+            </div>
+            <div class="team_member">
+                <img src="../static/images/9.JPG">
+                <div class="member_info">
+                    <div class="name"><h1>We're Hiring!</h1></div>
+                    <div class="position"><p>UX/UI expert</p></div>
+                    <div class="description"><p>We need a cofounder who is willing to occupy the position of chief UX/UI designer.<br>for more info, please reach out to us via the form in the "connect" section.</p></div>
+                </div>
+                <a href="">Visit LinkedIn profile</a>
+            </div>
+        </div>
+    </section>
+    <section id="connect" class="connect">
+        <form class="connect_form" id="connect_form" method="post" action="">
+            <h1>connect with us</h1>
+            <div class="costumer_credentials">
+                <input type="text" placeholder="Name" id="UserName">
+                <input type="email" placeholder="Email" id="Email">
+            </div>
+            <div class="costumer_message">
+                <input type="text" placeholder="message" id="Message">
+            </div>
+            <h3 id="Error_Message" style="color: red;"></h3>
+            <input type="submit" id="sbmt_btn_1" class="SubmitButton">
+        </form>
+    </section>
+    <div class="interest_screen" id="interest_screen">
+        <form class="interest_form">
+            <button id="exit_btn">X</button>
+            <h1>UpComming !</h1>
+            <p>this service is still under developemnt.<br>Tell us how much you'd like see this service available</p>
+            <div>
+                <input required="true" type="radio" name="option" id="option_1" value="interested"><label for="option_1">I just wanna learn more</label><br>
+                <input required="true" type="radio" name="option" id="option_2" value="wanting"><label for="option_2">I might use the solution software if I like it</label><br>
+                <input required="true" type="radio" name="option" id="option_3" value="enthusiast"><label for="option_3">Am Ready to use the solution what ever it is!</label><br>
+            </div>
+            <input class="email" id="Email_2" type="email" placeholder="Email">
+            <h3 id="Error_Message_2" style="color: red;"></h3>
+            <input type="submit" id="sbmt_btn_2">
+        </form>
+    </div>
+    <script src="../static/index.js"></script>
+</body>
+</html>

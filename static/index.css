@@ -1,0 +1,327 @@
+body,html{
+    width: 100%;
+    font-family: monospace;
+    background-image: url('../static/images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 95%;
+    background-color: rgba(240, 248, 255, 0.7);
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 100%;
+    padding: 0px 25px;
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    background-color: rgba(240, 248, 255, 0.882);
+}
+
+.home{
+    height: 550px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home h1{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 100px;
+}
+.home p{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 250px;
+}
+.about{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+    font-size: x-large;
+    box-sizing: border-box;
+    padding: 50px 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.about h1{
+    display: block;
+    margin-right: 15px;
+}
+.about p{
+    display: inline;
+    max-width: 50%;
+    margin-right: 15px;
+}
+.about img{
+    display: block;
+    height: 100%;
+    width: auto;
+    box-shadow: 10px 10px 0px black;
+}
+.services{
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.services h1{
+    background-color: black;
+}
+.commodities{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.commodity{
+    box-sizing:content-box;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 3%;
+    height: fit-content;
+    width: 40%;
+    max-width: 400px;
+    min-width: 320px;
+    margin: 20px 40px;
+    padding: 10px 10px;
+    text-shadow: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.7s;
+}
+.commodity:hover{
+    box-shadow: 15px 15px 0px red;
+}
+.commodity .name h1{
+    background-color: aliceblue;
+}
+.commodity .description{
+    max-width: 350px;
+    height: 100px;
+}
+.commodity .preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commodity .preview img{
+    width: 70%;
+    border-radius: 5px;
+}
+.commodity .interested_btn{
+    width: 60%;
+    height: fit-content;
+}
+.commodity .interested_btn button{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    transition-duration: 0.7s;
+}
+.commodity .interested_btn button:hover{
+    background-color: darkred;
+}
+.interest_screen{
+    width: 100%; height: 100%;
+    margin: 0px 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.interest_screen .interest_form{
+    padding: 15px 15px;
+    width: 30%;
+    height: 70%;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 10px 10px black;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.interest_screen .interest_form #exit_btn{
+    align-self: flex-end;
+    justify-self: flex-start;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: black;
+    font-size: larger;
+}
+.team{
+    width: 100%;
+    height: fit-content;
+    background-color: aliceblue;
+    color: black;
+    font-size: x-large;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.team .team_members{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.team .team_members .team_member{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    height: 550px;
+    width: 25%;
+    min-width: 300px;
+    padding: 45px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+.team .team_member img{
+    border-radius: 50%;
+    width: 30%;
+}
+.team .team_member .member_info{
+    height: 50%;
+    width: 85%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.team .team_member .member_info .description{
+    font-size: 1.2rem;
+}
+.connect{
+    width: 100%;
+}
+.connect .connect_form{
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    margin: 100px auto;
+    font-size: x-large;
+}
+.connect .connect_form .costumer_credentials,.connect .connect_form .costumer_message{
+    width: 100%;
+}
+.connect .connect_form .costumer_credentials input{
+    width: 40%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.65);
+}
+.connect .connect_form .costumer_message input{
+    width: 87%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.65);
+}
+.connect .connect_form .SubmitButton{
+    width: 30%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.65);
+    transition-duration: 0.7s;
+}
+.connect .connect_form .SubmitButton:hover{
+    background-color: darkred;
+}
+
+
+@media only screen and (max-width: 1400px){
+    body{
+        background-size: 140%;
+    }
+}
+@media only screen and (max-width: 950px){
+    body{
+        background-size: auto 100%;
+    }
+    .connect .connect_form .costumer_credentials input{
+        width: 80%;
+    }
+    nav{
+        display: none;
+    }
+    .about{
+        flex-flow: column nowrap;
+        height: fit-content;
+        font-size: small;
+    }
+    .about p{
+        max-width: 80%;
+    }
+    .about img{
+        display: none;
+    }
+    .interest_screen .interest_form{
+        padding: 10px 10px;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .interest_screen .interest_form{
+        padding: 5px 5px;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 500px){
+    body, html{
+        background-image: url('../static/images/1.1.jpg');
+        background-size: cover;
+    }
+    .interest_screen .interest_form{
+        padding: 5px 5px;
+        width: 90%;
+    }
+}
